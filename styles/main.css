@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,a{
+    font-weight: 300;
+}
+
+/* Nav-bar styles */
+#nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+    padding: 0px 2%;
+    z-index: 100;
+}
+
+/* Styling nav-bar logo */
+#logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0;
+    margin: 0;
+    color: #ebe0e0;
+}
+
+/* Styling nav-bar logo img*/
+#logo img{
+    height: 84px;
+}
+
+#nav a{
+    text-decoration: none;
+}
+
+#nav-links{
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.nav-link{
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 1px;
+}
+.nav-link:hover {
+    color: rgb(230, 228, 228);
+    text-decoration: none;
+    border-color: #845695;
+}
+
+#create-room-btn{
+    display: block;
+    background-color: #845695;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.nav-link svg {
+    width: 0;
+    height: 0;
+  }
+#create-room-btn:hover{
+    box-shadow: 7px 7px 7px rgba(199, 130, 216, 0.1); 
+    background-color: #6a3b7b;
+}
+.nav-list{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width:640px){
+    .nav-link svg{
+        width: 4.5rem;
+        height: 2rem;
+    }
+    .nav__link,
+  #create-room-btn {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+}
